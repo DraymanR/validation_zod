@@ -4,7 +4,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { userSchema, UserFormData } from '@/app/schemas/user';
-// import { z } from 'zod';
 
 export default function UserForm() {
     const { register, handleSubmit, formState: { errors } } = useForm<UserFormData>({
